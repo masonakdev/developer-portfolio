@@ -18,7 +18,18 @@ function App() {
         <Interests />
       </div>
       <footer className="mt-6 py-8 text-center text-sm text-muted-foreground border-t">
-        <p>&copy; {new Date().getFullYear()} Mason Wilcox. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} Mason Wilcox. Released under the MIT License.
+          <span className="mx-2">|</span>
+          <a
+            href="https://github.com/masonakdev/developer-portfolio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:underline hover:text-foreground transition-colors"
+          >
+            Source Code
+          </a>
+        </p>
       </footer>
     </Layout>
   );
