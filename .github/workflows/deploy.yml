@@ -4,32 +4,36 @@ on:
   push:
     branches: [ main ]
 
+env:
+  AWS_REGION: us-east-1
+
 jobs:
-  build-and-push:
+  deploy:
+    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
+    
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
 
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v4
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: ${{ secrets.AWS_REGION }}
+        aws-region: ${{ env.AWS_REGION }}
 
-    - name: Login to Amazon ECR
-      id: login-ecr
+    - name: Login to Amazon ECR Public
+      id: login-ecr-public
       uses: aws-actions/amazon-ecr-login@v2
       with:
         registry-type: public
 
-    - name: Build, tag, and push image to Amazon ECR
+    - name: Build, tag, and push docker image to Amazon ECR Public
       env:
-        AWS_ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        AWS_ECR_REPOSITORY: ${{ secrets.AWS_ECR_REPOSITORY }}
+        REGISTRY: ${{ secrets.AWS_ECR_REGISTRY }}
+        REPOSITORY: ${{ secrets.AWS_ECR_REPOSITORY }}
         IMAGE_TAG: ${{ github.sha }}
       run: |
-        docker build -t $AWS_ECR_REGISTRY/$AWS_ECR_REPOSITORY:$IMAGE_TAG -t $AWS_ECR_REGISTRY/$AWS_ECR_REPOSITORY:latest .
-        docker push $AWS_ECR_REGISTRY/$AWS_ECR_REPOSITORY:$IMAGE_TAG
-        docker push $AWS_ECR_REGISTRY/$AWS_ECR_REPOSITORY:latest
+        docker build -t $REGISTRY/$REPOSITORY:latest -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
+        docker push $REGISTRY/$REPOSITORY:latest
+        docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
