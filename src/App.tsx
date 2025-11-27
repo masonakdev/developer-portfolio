@@ -11,9 +11,9 @@ function App() {
     <Layout>
       <div className="space-y-6">
         <Hero />
+        <Experience />
         <Certifications />
         <Projects />
-        <Experience />
         <Education />
         <Interests />
       </div>
