@@ -17,7 +17,7 @@ const personalHighlights = [
     {
         icon: <Trophy className="h-6 w-6" />,
         title: 'Competitive Spirit',
-        description: 'I grew up wrestling (CA CIF State Qualifier) and playing football. Currently I\'m a Poker tournament player focused on game theory.',
+        description: 'I grew up wrestling (CA CIF State Qualifier) and playing football. Currently I\'m a poker tournament player focused on game theory.',
     },
     {
         icon: <Mountain className="h-6 w-6" />,
