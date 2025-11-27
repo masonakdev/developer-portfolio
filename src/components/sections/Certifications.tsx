@@ -4,7 +4,7 @@ import securityPlus from '@/assets/security_plus.png';
 import projectPlus from '@/assets/project_plus.png';
 import aPlus from '@/assets/a_plus.png';
 import itil4 from '@/assets/itil_4.png';
-import { cn } from '@/lib/utils';
+
 
 const certifications = [
     { name: 'AWS Cloud Practicioner', image: awsCcp },
@@ -24,11 +24,7 @@ const Certifications: React.FC = () => {
                         <img
                             src={cert.image}
                             alt={cert.name}
-                            className={cn(
-                                "max-h-full max-w-full object-contain",
-                                cert.name.includes("AWS") && "p-2",
-                                cert.name.includes("ITIL") && "p-2"
-                            )}
+                            className="max-h-full max-w-full object-contain"
                             title={cert.name}
                         />
                     </div>
