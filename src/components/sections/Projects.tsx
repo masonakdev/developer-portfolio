@@ -15,6 +15,7 @@ const projects = [
         liveUrl: 'https://edgecase.masonak.dev',
         githubUrl: 'https://github.com/masonakdev/edgecase-demo',
         details: 'EdgeCase serves as a centralized platform for the community to share safety information, analyze trends, and improve risk management. It features a microservices architecture with a Next.js frontend and Spring Boot backend, containerized with Docker and deployed on AWS.',
+        shadow: 'drop-shadow-[0_14px_18px_rgba(0,0,0,0.6)]',
     },
     {
         title: 'Redis Server in Java',
@@ -24,6 +25,7 @@ const projects = [
         githubUrl: 'https://github.com/masonakdev/redis-server-java',
         details: 'Built to understand Redis internals, this project implements the RESP2 protocol, handling TCP connections, concurrent clients, and core commands like SET, GET, and various list/stream operations. It is actively being developed to include advanced features like transactions and replication.',
         active: true,
+        shadow: 'drop-shadow-[0_10px_12px_rgba(0,0,0,0.4)]',
     },
 ];
 
@@ -34,11 +36,11 @@ const Projects: React.FC = () => {
             <div className="grid gap-8 md:grid-cols-2">
                 {projects.map((project) => (
                     <Card key={project.title} className="flex flex-col overflow-hidden hover:shadow-lg transition-shadow duration-300">
-                        <div className="h-48 overflow-hidden bg-secondary/50 dark:bg-slate-200 flex items-center justify-center p-8">
+                        <div className="h-48 bg-secondary/50 dark:bg-slate-200 flex items-center justify-center p-8 relative z-10">
                             <img
                                 src={project.image}
                                 alt={project.title}
-                                className="h-full w-full object-contain hover:scale-105 transition-transform duration-300"
+                                className={`h-full w-full object-contain hover:scale-105 transition-transform duration-300 ${project.shadow}`}
                             />
                         </div>
                         <CardHeader>
