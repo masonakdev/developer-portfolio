@@ -10,7 +10,7 @@ const experiences = [
         description: 'Ensure operational stability for over 300 cloud-hosted microservices by leveraging Python automation and Linux diagnostic tools to triage incidents and report critical data to senior leadership.',
     },
     {
-        role: 'Airborne Cryptologic Language Analyst',
+        role: 'Mandarin Airborne Cryptologic Language Analyst',
         company: 'United States Air Force',
         period: '2020 - 2024',
         description: 'Served as an Airborne Chinese Linguist on the EC-130H Compass Call. Responsible for real-time translation and analysis of foreign communications.',
