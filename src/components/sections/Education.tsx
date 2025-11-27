@@ -9,7 +9,7 @@ const education = [
         date: 'Nov 2025',
     },
     {
-        degree: 'Certificate of Linguistic Proficiency',
+        degree: 'Mandarin Chinese',
         school: 'Defense Language Institute',
         location: 'Monterey, CA',
         date: 'July 2022',
