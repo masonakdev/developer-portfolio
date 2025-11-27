@@ -20,7 +20,7 @@ const Certifications: React.FC = () => {
             <h2 className="text-3xl font-bold text-center">Certifications</h2>
             <div className="flex flex-wrap justify-center items-center gap-8">
                 {certifications.map((cert) => (
-                    <div key={cert.name} className="group relative h-24 w-24 flex items-center justify-center transition-transform hover:scale-110 duration-300">
+                    <div key={cert.name} className="group relative h-32 w-32 flex items-center justify-center transition-transform hover:scale-110 duration-300">
                         <img
                             src={cert.image}
                             alt={cert.name}
