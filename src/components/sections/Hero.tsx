@@ -6,7 +6,7 @@ import profilePic from '@/assets/profile_pic.png';
 
 const Hero: React.FC = () => {
     return (
-        <section className="flex flex-col items-center text-center space-y-8 py-12 animate-in fade-in slide-in-from-bottom-4 duration-1000">
+        <section className="flex flex-col items-center text-center space-y-5 py-7 animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <div className="relative">
                 <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-primary shadow-xl">
                     <img

@@ -9,7 +9,7 @@ import Interests from './components/sections/Interests';
 function App() {
   return (
     <Layout>
-      <div className="space-y-6">
+      <div className="space-y-3.5">
         <Hero />
         <Experience />
         <Certifications />

@@ -19,7 +19,7 @@ const experiences = [
 
 const Experience: React.FC = () => {
     return (
-        <section className="py-12 space-y-8">
+        <section className="py-7 space-y-5">
             <h2 className="text-3xl font-bold text-center">Experience</h2>
             <div className="space-y-6">
                 {experiences.map((exp, index) => (

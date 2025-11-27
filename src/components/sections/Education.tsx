@@ -18,7 +18,7 @@ const education = [
 
 const Education: React.FC = () => {
     return (
-        <section className="py-12 space-y-8">
+        <section className="py-7 space-y-5">
             <h2 className="text-3xl font-bold text-center">Education</h2>
             <div className="grid gap-6 md:grid-cols-2">
                 {education.map((edu, index) => (

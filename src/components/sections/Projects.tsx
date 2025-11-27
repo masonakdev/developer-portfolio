@@ -32,7 +32,7 @@ const projects = [
 
 const Projects: React.FC = () => {
     return (
-        <section className="py-12 space-y-8">
+        <section className="py-7 space-y-5">
             <h2 className="text-3xl font-bold text-center">Projects</h2>
             <div className="grid gap-8 md:grid-cols-2">
                 {projects.map((project) => (

@@ -16,7 +16,7 @@ const certifications = [
 
 const Certifications: React.FC = () => {
     return (
-        <section className="py-12 space-y-8">
+        <section className="py-7 space-y-5">
             <h2 className="text-3xl font-bold text-center">Certifications</h2>
             <div className="flex flex-wrap justify-center items-center gap-8">
                 {certifications.map((cert) => (
