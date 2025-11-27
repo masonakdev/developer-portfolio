@@ -6,7 +6,7 @@ const education = [
         degree: 'B.S. Software Engineering',
         school: 'Western Governors University',
         location: 'Salt Lake City, UT',
-        date: 'Nov 2025',
+        date: 'November 2025',
     },
     {
         degree: 'Mandarin Chinese',
