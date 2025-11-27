@@ -16,6 +16,7 @@ const projects = [
         githubUrl: 'https://github.com/masonakdev/edgecase-demo',
         details: 'EdgeCase serves as a centralized platform for the community to share safety information, analyze trends, and improve risk management. It features a microservices architecture with a Next.js frontend and Spring Boot backend, containerized with Docker and deployed on AWS.',
         shadow: 'drop-shadow-[0_14px_18px_rgba(0,0,0,0.6)]',
+        mvp: true,
     },
     {
         title: 'Redis Server in Java',
@@ -46,6 +47,11 @@ const Projects: React.FC = () => {
                         <CardHeader>
                             <div className="flex justify-between items-start">
                                 <CardTitle>{project.title}</CardTitle>
+                                {project.mvp && (
+                                    <Badge variant="secondary" className="ml-2">
+                                        MVP
+                                    </Badge>
+                                )}
                                 {project.active && (
                                     <Badge variant="default" className="ml-2">
                                         Active Dev
