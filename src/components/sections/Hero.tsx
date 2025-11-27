@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
                     Software Engineer based in Denver, CO
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                    With a B.S. in Software Engineering and a background in tactical military operations, I bring discipline and clarity to technical development. I am passionate about using technology to solve complex problems and build scalable, resilient solutions.
+                    With a B.S. in Software Engineering and a background in tactical military operations, I bring discipline and clarity to technical development. I enjoy engineering simple, scalable, and resilient solutions for complex environments.
                 </p>
             </div>
 
