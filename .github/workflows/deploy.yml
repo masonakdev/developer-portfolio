@@ -9,7 +9,6 @@ env:
 
 jobs:
   deploy:
-    if: github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     
     steps:
@@ -32,7 +31,7 @@ jobs:
       env:
         REGISTRY: ${{ secrets.AWS_ECR_REGISTRY }}
         REPOSITORY: ${{ secrets.AWS_ECR_REPOSITORY }}
-        IMAGE_TAG: ${{ github.sha }}
+        IMAGE_TAG: ${{ github.ref_name }}
       run: |
         docker build -t $REGISTRY/$REPOSITORY:latest -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
         docker push $REGISTRY/$REPOSITORY:latest
