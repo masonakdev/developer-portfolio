@@ -1,7 +1,13 @@
+<div align="center">
+
+![ECR Deployment](https://github.com/masonakdev/developer-portfolio/actions/workflows/deploy.yml/badge.svg)
+
+</div>
+
 # Developer Portfolio
 
-My personal developer portfolio website built with React, TypeScript, and Vite.
+My personal developer portfolio website built with React, TypeScript, and Vite. Deployed on AWS Lightsail and managed by Docker Compose.
 
-**Link**: [https://masonak.dev](https://masonak.dev)<br>
-**Author**: Mason Wilcox<br>
+**Website**: [https://masonak.dev](https://masonak.dev)<br/>
+**Author**: Mason Wilcox<br/>
 **Published**: November 27, 2025
