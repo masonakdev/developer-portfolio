@@ -7,7 +7,7 @@ const personalHighlights = [
     {
         icon: <Cpu className="h-6 w-6" />,
         title: 'Hardware Enthusiast',
-        description: 'Novice Computer Engineering interest, exploring the physical layer of computing.',
+        description: 'Novice Computer Engineering interest. I am fascinated by the physical layer of computing.',
     },
     {
         icon: <Plane className="h-6 w-6" />,
