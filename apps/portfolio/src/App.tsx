@@ -5,6 +5,7 @@ import Projects from './components/sections/Projects';
 import Experience from './components/sections/Experience';
 import Education from './components/sections/Education';
 import Interests from './components/sections/Interests';
+import GitHubTagBadge from './components/ui/GitHubTagBadge';
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
           >
             Source Code
           </a>
+          <GitHubTagBadge />
         </p>
       </footer>
     </Layout>
