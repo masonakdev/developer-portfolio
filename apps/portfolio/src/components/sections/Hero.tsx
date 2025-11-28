@@ -1,7 +1,8 @@
 import React from 'react';
-import { Github, Linkedin, FileText } from 'lucide-react';
+import { Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
+import ResumeButton from '@/components/ui/ResumeButton';
 import profilePic from '@/assets/profile_pic.png';
 
 const Hero: React.FC = () => {
@@ -47,12 +48,7 @@ const Hero: React.FC = () => {
                         LinkedIn
                     </a>
                 </Button>
-                <Button size="lg" asChild>
-                    <a href="https://raw.githubusercontent.com/masonakdev/developer-portfolio/main/resume/Mason%20Wilcox%20Resume.pdf" target="_blank" rel="noopener noreferrer">
-                        <FileText className="mr-2 h-5 w-5" />
-                        Resume
-                    </a>
-                </Button>
+                <ResumeButton />
             </div>
         </section>
     );
