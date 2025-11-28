@@ -6,7 +6,7 @@
 
 # Developer Portfolio
 
-My personal developer portfolio website built with React, TypeScript, and Vite. Deployed on AWS Lightsail and managed by Docker Compose.
+My personal developer portfolio website built with React, TypeScript, and Vite. Deployed on Hetzner and managed by Docker Compose.
 
 **Website**: [https://masonak.dev](https://masonak.dev)<br/>
 **Author**: Mason Wilcox<br/>
