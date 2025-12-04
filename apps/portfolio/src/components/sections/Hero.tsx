@@ -1,7 +1,6 @@
 import React from 'react';
 import { Github, Linkedin } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
 import ResumeButton from '@/components/ui/ResumeButton';
 import profilePic from '@/assets/profile_pic.png';
 
@@ -15,11 +14,6 @@ const Hero: React.FC = () => {
                         alt="Mason Wilcox"
                         className="w-full h-full object-cover scale-125"
                     />
-                </div>
-                <div className="absolute -bottom-2 -right-2">
-                    <Badge variant="secondary" className="text-xs shadow-md">
-                        TS/SCI w/ CI Poly
-                    </Badge>
                 </div>
             </div>
 
