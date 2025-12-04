@@ -1,7 +1,8 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Cpu, Plane, Trophy, Mountain, Globe, Camera } from 'lucide-react';
+import { Cpu, Trophy, Mountain, Globe, Camera } from 'lucide-react';
+import { ParachuteIcon } from '@/components/ui/ParachuteIcon';
 
 const personalHighlights = [
     {
@@ -10,8 +11,8 @@ const personalHighlights = [
         description: 'Novice Computer Engineering interest. I am fascinated by the physical layer of computing.',
     },
     {
-        icon: <Plane className="h-6 w-6" />,
-        title: 'Sky & BASE',
+        icon: <ParachuteIcon className="h-6 w-6" />,
+        title: 'Skydiving & BASE',
         description: 'I\'m a big fan of nylon and blue skies. I have 350+ skydives and 100+ BASE jumps.',
     },
     {
