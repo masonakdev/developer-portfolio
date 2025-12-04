@@ -1,5 +1,5 @@
 import React from 'react';
-import { Github, Linkedin } from 'lucide-react';
+import { Github, Linkedin, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import ResumeButton from '@/components/ui/ResumeButton';
 import profilePic from '@/assets/profile_pic.png';
@@ -40,6 +40,12 @@ const Hero: React.FC = () => {
                     <a href="https://linkedin.com/in/masonawilcox" target="_blank" rel="noopener noreferrer">
                         <Linkedin className="mr-2 h-5 w-5" />
                         LinkedIn
+                    </a>
+                </Button>
+                <Button variant="outline" size="lg" asChild>
+                    <a href="mailto:ping@masoncamara.com">
+                        <Mail className="mr-2 h-5 w-5" />
+                        Email Me
                     </a>
                 </Button>
                 <ResumeButton />
