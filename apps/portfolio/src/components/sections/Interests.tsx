@@ -23,7 +23,7 @@ const personalHighlights = [
     {
         icon: <Mountain className="h-6 w-6" />,
         title: 'Outdoors',
-        description: 'I enjoy hiking, camping, and being out in nature.',
+        description: 'I enjoy hiking, camping, being out in nature, and climbing.',
     },
     {
         icon: <Globe className="h-6 w-6" />,
