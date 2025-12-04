@@ -4,6 +4,12 @@ import { Badge } from '@/components/ui/badge';
 
 const experiences = [
     {
+        role: 'Incoming Software Engineer',
+        company: 'Northrop Grumman',
+        period: 'Early 2026',
+        description: 'Set to join a division responsible for engineering mission-critical software solutions. Will utilize Java and Python to design, develop, and test complex applications supporting space systems.',
+    },
+    {
         role: 'Intelligence Automation Operations',
         company: 'CACI International Inc',
         period: '2025 - Present',
