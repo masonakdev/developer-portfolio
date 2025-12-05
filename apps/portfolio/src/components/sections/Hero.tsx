@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
                 </p>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
                 <Button variant="outline" size="lg" asChild>
                     <a href="https://github.com/masonakdev" target="_blank" rel="noopener noreferrer">
                         <Github className="mr-2 h-5 w-5" />
