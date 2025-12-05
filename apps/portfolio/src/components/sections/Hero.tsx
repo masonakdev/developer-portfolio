@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
                     Mason Wilcox
                 </h1>
-                <p className="text-xl text-muted-foreground">
+                <p className="text-base sm:text-xl text-muted-foreground whitespace-nowrap">
                     Software Engineer based in Denver, CO
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
@@ -29,7 +29,7 @@ const Hero: React.FC = () => {
                 </p>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex flex-wrap justify-center gap-4">
                 <Button variant="outline" size="lg" asChild>
                     <a href="https://github.com/masonakdev" target="_blank" rel="noopener noreferrer">
                         <Github className="mr-2 h-5 w-5" />
