@@ -21,7 +21,7 @@ const Hero: React.FC = () => {
                 <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
                     Mason Wilcox
                 </h1>
-                <p className="text-xl text-muted-foreground">
+                <p className="text-base sm:text-xl text-muted-foreground whitespace-nowrap">
                     Software Engineer based in Denver, CO
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
