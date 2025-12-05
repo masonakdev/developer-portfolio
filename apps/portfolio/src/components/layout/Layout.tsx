@@ -20,7 +20,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
     };
 
     return (
-        <div className="min-h-screen bg-background text-foreground transition-colors duration-300">
+        <div className="min-h-screen bg-background text-foreground transition-colors duration-300 overflow-x-hidden">
             <header className="fixed top-0 right-0 p-4 z-50">
                 <div className="relative group">
                     <Button
