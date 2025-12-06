@@ -3,6 +3,10 @@ name: Deploy to ECR
 on:
   workflow_dispatch:
   push:
+    branches:
+      - main
+    paths:
+      - 'resume/**'
     tags: [ 'v*' ]
 
 env:
