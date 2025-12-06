@@ -6,10 +6,7 @@ import { Button } from '@/components/ui/button';
 import 'react-pdf/dist/Page/AnnotationLayer.css';
 import 'react-pdf/dist/Page/TextLayer.css';
 
-pdfjs.GlobalWorkerOptions.workerSrc = new URL(
-    'pdfjs-dist/build/pdf.worker.min.mjs',
-    import.meta.url
-).toString();
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.mjs`;
 
 interface ResumeViewerProps {
     isOpen: boolean;
@@ -116,7 +113,7 @@ const ResumeViewer: React.FC<ResumeViewerProps> = ({
                                             </div>
                                         }
                                     >
-                                        {Array.from(new Array(numPages), (el, index) => (
+                                        {Array.from(new Array(numPages), (_, index) => (
                                             <div key={`page_${index + 1}`} className="mb-4 last:mb-0">
                                                 <Page
                                                     pageNumber={index + 1}
