@@ -7,6 +7,7 @@ import {
     TooltipProvider,
     TooltipTrigger,
 } from '@/components/ui/tooltip';
+import ResumeViewer from './ResumeViewer';
 
 interface CommitInfo {
     commit: {
@@ -18,6 +19,7 @@ interface CommitInfo {
 
 export default function ResumeButton() {
     const [lastUpdated, setLastUpdated] = useState<string | null>(null);
+    const [isModalOpen, setIsModalOpen] = useState(false);
 
     useEffect(() => {
         fetch(
@@ -39,30 +41,32 @@ export default function ResumeButton() {
     }, []);
 
     const button = (
-        <Button size="lg" asChild>
-            <a
-                href="https://raw.githubusercontent.com/masonakdev/developer-portfolio/main/resume/Mason%20Wilcox%20Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <FileText className="mr-2 h-5 w-5" />
-                Resume
-            </a>
+        <Button size="lg" onClick={() => setIsModalOpen(true)}>
+            <FileText className="mr-2 h-5 w-5" />
+            Resume
         </Button>
     );
 
-    if (!lastUpdated) {
-        return button;
-    }
-
     return (
-        <TooltipProvider>
-            <Tooltip>
-                <TooltipTrigger asChild>{button}</TooltipTrigger>
-                <TooltipContent>
-                    <p>Last updated: {lastUpdated}</p>
-                </TooltipContent>
-            </Tooltip>
-        </TooltipProvider>
+        <>
+            <ResumeViewer
+                isOpen={isModalOpen}
+                onClose={() => setIsModalOpen(false)}
+                lastUpdated={lastUpdated}
+            />
+
+            {lastUpdated ? (
+                <TooltipProvider>
+                    <Tooltip>
+                        <TooltipTrigger asChild>{button}</TooltipTrigger>
+                        <TooltipContent>
+                            <p>Last updated: {lastUpdated}</p>
+                        </TooltipContent>
+                    </Tooltip>
+                </TooltipProvider>
+            ) : (
+                button
+            )}
+        </>
     );
 }
