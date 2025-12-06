@@ -81,7 +81,7 @@ const ResumeViewer: React.FC<ResumeViewerProps> = ({
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <Download className="w-4 h-4 mr-2" />
+                                            <Download className="w-4 h-4 sm:mr-2" />
                                             <span className="hidden sm:inline">Download</span>
                                         </a>
                                     </Button>
