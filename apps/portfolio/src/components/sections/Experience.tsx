@@ -21,6 +21,12 @@ const experiences = [
         period: '2020 - 2024',
         description: 'Served as an Airborne Chinese Linguist on the EC-130H Compass Call. Responsible for real-time translation and analysis of foreign communications.',
     },
+    {
+        role: 'Combat Ready Intelligence Instructor',
+        company: 'United States Air Force',
+        period: '2021-2022',
+        description: 'Selected as a Combat Ready Intelligence Instructor while concurrently studying Mandarin Chinese. Trained personnel for Special Forces integration following completion of the rigorous qualification course.'
+    },
 ];
 
 const Experience: React.FC = () => {
