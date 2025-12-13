@@ -3,6 +3,12 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
 const education = [
     {
+        degree: 'B.S. Electrical Engineering',
+        school: 'University of Colorado Denver',
+        location: 'Denver, CO',
+        date: 'May 2029'
+    },
+    {
         degree: 'B.S. Software Engineering',
         school: 'Western Governors University',
         location: 'Salt Lake City, UT',
@@ -13,6 +19,12 @@ const education = [
         school: 'Defense Language Institute',
         location: 'Monterey, CA',
         date: 'July 2022',
+    },
+    {
+        degree: 'Combat Ready Intelligence',
+        school: 'United States Air Force',
+        location: 'Monterey, CA',
+        date: 'August 2021',
     },
 ];
 
