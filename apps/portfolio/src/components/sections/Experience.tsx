@@ -6,13 +6,13 @@ const experiences = [
     {
         role: 'Software Engineer II',
         company: 'Northrop Grumman',
-        period: 'Early 2026',
-        description: 'Set to join a division responsible for engineering mission-critical software solutions. Will utilize Java and Python to design, develop, and test complex applications supporting space systems.',
+        period: '2026 - Present',
+        description: 'Member of a division responsible for engineering mission-critical software solutions. Utilize Java, Javascript, and Python to design, develop, and test complex applications supporting space systems.',
     },
     {
         role: 'Intelligence Automation Analyst',
         company: 'CACI International Inc',
-        period: '2025 - Present',
+        period: '2025 - 2026',
         description: 'Ensure operational stability for over 300 cloud-hosted microservices by leveraging Python automation and Linux diagnostic tools to triage incidents and report critical data to senior leadership.',
     },
     {
